@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>select 下拉選單</title>
+</head>
+<body>
+<label for="members">這是一個選會員的程式</label>
+
+<select name="members" id="members">
+    <option th:each="member: ${memberList}" th:value="${member.id}" th:text="${member.name}"></option>
+</select>
+</body>
+</html>
